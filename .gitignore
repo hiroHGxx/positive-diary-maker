@@ -1,0 +1,21 @@
+# 依存関係
+/node_modules
+
+# 環境変数ファイル
+.env
+
+# ログファイル
+*.log
+
+# エディタディレクトリとファイル
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# システムファイル
+.DS_Store
+Thumbs.db
