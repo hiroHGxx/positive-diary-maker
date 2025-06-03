@@ -1,6 +1,7 @@
 [build]
   command = "npm install && npm run build"
   publish = "public"
+  functions = "netlify/functions"
 
 [dev]
   command = "npm start"
@@ -14,4 +15,9 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
   status = 200

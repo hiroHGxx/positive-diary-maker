@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // バックエンドにリクエストを送信
             console.log('リクエストを送信します:', inputText);
-            const response = await fetch('/generate-diary', {
+            const response = await fetch('/.netlify/functions/generate-diary', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
