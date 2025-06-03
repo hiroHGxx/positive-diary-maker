@@ -7,32 +7,23 @@
 }
 
 body {
-    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
-    color: var(--text-color);
-    background: linear-gradient(135deg, #f8f9fe 0%, #f6f9fc 100%);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 1rem;
-    box-sizing: border-box;
+    padding: 20px;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: var(--primary-color);
+    color: #5d93e4;
     text-align: center;
     margin-bottom: 30px;
     font-size: 24px;
@@ -46,8 +37,8 @@ h1 {
 textarea {
     width: 100%;
     padding: 15px;
-    border: 2px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
     font-size: 16px;
     resize: vertical;
     min-height: 100px;
@@ -57,7 +48,7 @@ textarea {
 
 textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: #5d93e4;
     box-shadow: 0 0 0 3px rgba(93, 147, 228, 0.2);
 }
 
@@ -65,10 +56,10 @@ button {
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: var(--primary-color);
+    background-color: #5d93e4;
     color: white;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -86,16 +77,16 @@ button:active {
 /* 結果表示エリアのスタイル */
 .result-area {
     padding: 20px;
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--primary-color);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #5d93e4;
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 18px;
-    color: var(--light-text);
+    color: #555;
     transition: all 0.3s;
 }
 
@@ -121,26 +112,5 @@ button:active {
     
     button {
         font-size: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 1.5rem;
-        margin: 1rem;
-        width: auto;
-    }
-    
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    p {
-        font-size: 0.95rem;
-    }
-    
-    button {
-        padding: 0.9rem 1.5rem;
-        font-size: 0.95rem;
     }
 }
